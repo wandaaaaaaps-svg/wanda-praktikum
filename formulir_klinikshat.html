@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Klinik Sehat</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Klinik Sehat</h2>
+    <form action="submit_kliniksehat.html" method="post">
+        Nama Pasien: <input type="text" name="nama_pasien" required /><br/>
+        Usia: <input type="number" name="usia" min="0" max="120" required /> tahun<br/>
+        Jenis Kelamin:
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" checked /> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan<br/>
+        Keluhan:
+        <textarea name="keluhan" rows="4" cols="30"></textarea><br/>
+        Apakah Pernah Berobat Sebelumnya?
+        <select name="riwayat_berobat">
+            <option value="Ya">Ya</option>
+            <option value="Tidak" selected>Tidak</option>
+        </select><br/>
+        Nama Dokter Favorit: <input type="text" name="dokter_favorit" /><br/>
+        <input type="submit" value="Daftar" />
+    </form>
+</body>
+</html>
