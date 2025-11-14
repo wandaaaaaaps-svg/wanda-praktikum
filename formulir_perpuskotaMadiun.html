@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Perpustakaan Kota Madiun</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Anggota Perpustakaan Kota Madiun</h2>
+    <form action="submit_perpuskotaMadiun.html" method="post">
+        Nama Lengkap: <input type="text" name="nama_lengkap" required /><br/>
+        Alamat: <textarea name="alamat" rows="3" cols="25" required></textarea><br/>
+        Jenis Kelamin:
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" checked /> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan<br/>
+        Nomor Telepon: <input type="tel" name="no_telepon" pattern="[0-9]{10,13}" placeholder="081234567890" required /><br/>
+        Email: <input type="email" name="email" required /><br/>
+        Buku Favorit:
+        <select name="buku_favorit">
+            <option value="Fiksi">Fiksi</option>
+            <option value="Non-fiksi">Non-fiksi</option>
+            <option value="Ilmiah">Ilmiah</option>
+            <option value="Komik">Komik</option>
+        </select><br/>
+        Komentar / Saran:<br/>
+        <textarea name="komentar" rows="4" cols="30"></textarea><br/>
+        <input type="submit" value="Daftar" />
+    </form>
+</body>
+</html>
